@@ -1,5 +1,7 @@
 import { session, useSession } from "next-auth/client"
 import Image from "next/image"
+import { EmojiHappyIcon } from "@heroicons/react/outline"
+import { CameraIcon, VideoCameraIcon } from "@heroicons/react/solid"
 
 function InputBox() {
 
@@ -27,6 +29,26 @@ function InputBox() {
                 </form>
                 <button hidden type="submit" onClick={sendPost}>Submit</button>
             </div>
+
+            <div className="flex justify-evenly p-3 border-t">
+
+                <div className="inputIcon">
+                    <VideoCameraIcon className="h-7 text-red-500 "/>
+                    <p className="text-xs sm:text-sm xl:text-base">Live Video</p>
+                </div>
+
+                <div className="inputIcon">
+                    <CameraIcon className="h-7 text-green-400 " />
+                    <p className="text-xs sm:text-sm xl:text-base">Photo / Video</p>
+                </div>
+
+                <div className="inputIcon">
+                    <EmojiHappyIcon className="h-7 text-yellow-300 " />
+                    <p className="text-xs sm:text-sm xl:text-base">Feeling / Activity</p>
+                </div>
+
+            </div>
+
         </div>
     )
 }
