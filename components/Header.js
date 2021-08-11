@@ -1,4 +1,4 @@
-import Image from "next/Image";
+import Image from "next/image";
 import facebookLogo from "../resources/facebookLogo.svg";
 import {
     BellIcon,
@@ -16,7 +16,7 @@ import {
     ShoppingCartIcon,
 } from "@heroicons/react/outline";
 import HeaderIcon from "./HeaderIcon";
-import { session, signOut, useSession } from "next-auth/client";
+import { signOut, useSession } from "next-auth/client";
 
 function Header() {
 
