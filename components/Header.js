@@ -32,7 +32,6 @@ function Header() {
                     width={40}
                     height={40}
                     layout="fixed"
-                    alt=""
                 />
 
                 <div className="flex ml-2 items-center rounded-full bg-gray-100 p-2">
@@ -62,7 +61,6 @@ function Header() {
                     width="40"
                     height="40"
                     layout="fixed"
-                    alt=""
                 />
 
                 <p className="whitespace-nowrap font-semibold pr-3">{session.user.name}</p>

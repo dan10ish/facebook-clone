@@ -10,7 +10,6 @@ function Login() {
                 width={400}
                 height={400}
                 objectFit="contain"
-                alt=""
             />
             <h1 onClick={signIn} className="p-5 bg-blue-400 rounded-full text-white text-center cursor-pointer">Login with Facebook</h1>
         </div>
