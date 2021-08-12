@@ -4114,6 +4114,11 @@
     "string-width" "^4.2.0"
     "strip-ansi" "^6.0.0"
 
+"tailwind-scrollbar-hide@^1.0.3":
+  "integrity" "sha512-BF+ITR3cJFFF8IP1B6snlZtwSJxwWIB030LX9ZGEITBfWiqn1V4rEJUF44HJH5w6hZBrqSlwJdhILya8OvWefg=="
+  "resolved" "https://registry.npmjs.org/tailwind-scrollbar-hide/-/tailwind-scrollbar-hide-1.0.3.tgz"
+  "version" "1.0.3"
+
 "tailwindcss@^2.2.7":
   "integrity" "sha512-jv35rugP5j8PpzbXnsria7ZAry7Evh0KtQ4MZqNd+PhF+oIKPwJTVwe/rmfRx9cZw3W7iPZyzBmeoAoNwfJ1yg=="
   "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-2.2.7.tgz"
