@@ -1,18 +1,33 @@
-import { session, useSession } from "next-auth/client"
-import Image from "next/image"
-import { EmojiHappyIcon } from "@heroicons/react/outline"
-import { CameraIcon, VideoCameraIcon } from "@heroicons/react/solid"
+import { useSession } from "next-auth/client";
+import Image from "next/image";
+import { EmojiHappyIcon } from "@heroicons/react/outline";
+import { CameraIcon, VideoCameraIcon } from "@heroicons/react/solid";
+import { useRef } from "react";
+import { db } from "../firebase";
+import firebase from "firebase";
 
 function InputBox() {
-
     const [session] = useSession();
+    const inputRef = useRef(null);
 
-    const sendPost = e => {
+    const sendPost = (e) => {
         e.preventDefault();
-    };
+
+        if (!inputRef.current.value) return;
+
+        db.collection('posts').add({
+            message: inputRef.current.value,
+            name: session.user.name,
+            email: session.user.email,
+            image: session.user.image,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+        });
+
+        inputRef.current.value = "";
+    }
 
     return (
-        <div className="bg-white p-2 rounded-2xl shadow-md text-gray-500 font-medium mt-6">          
+        <div className="bg-white p-2 rounded-2xl shadow-md text-gray-500 font-medium mt-6">
             <div className="flex space-x-4 p-4 items-center">
                 <Image
                     className="rounded-full"
@@ -25,15 +40,16 @@ function InputBox() {
                     <input
                         className="rounded-full h-12 bg-gray-100 flex-grow px-5 focus:outline-none"
                         type="text"
+                        ref={inputRef}
                         placeholder={`What's on your mind, ${session.user.name} ?`} />
+                    <button onClick={sendPost} hidden type='submit'>Submit</button>
                 </form>
-                <button hidden type="submit" onClick={sendPost}>Submit</button>
             </div>
 
             <div className="flex justify-evenly p-3 border-t">
 
                 <div className="inputIcon">
-                    <VideoCameraIcon className="h-7 text-red-500 "/>
+                    <VideoCameraIcon className="h-7 text-red-500 " />
                     <p className="text-xs sm:text-sm xl:text-base">Live Video</p>
                 </div>
 
