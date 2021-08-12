@@ -1,34 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LinkedIn Clone 
 
-## Getting Started
+<br>
 
-First, run the development server:
+A fully functional Facebook clone made using
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+* `Next.js`
+* `React`
+* `Tailwind CSS`
+* `Firebase`
+* `Facebook Login`
+* `Image Uploading`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
+* This Web app is fully responsive made using Tailwind CSS. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+* You can add real-time posts and include pictures in it.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+---
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+* Clone this repositiory.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Open terminal and type `npm run dev` or `yarn run dev`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### Preview
+<br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Large Screen:  
+<p align="center">
+  <img src="./resources/Readme_Images/large-screen.png" width="550px" title="Login Page">
+</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br>
+
+Medium Screen: 
+<p align="center">
+  <img src="./resources/Readme_Images/medium-screen.png" width="550px" title="Main Page">
+</p>
+
+<br>
+
+Small Screen: 
+<p align="center">
+  <img src="./resources/Readme_Images/small-screen.png" width="550px" title="Main Page">
+</p>
+
+<br>
+
+---
+
+<br>
+<p align="center">
+Check out my <a href="https://danishansari.dev/">website</a>.
+</p>
+
+<p align="center">
+<a href="https://www.linkedin.com/in/dan7sh/" target="_blank" rel="noopener noreferrer"><img align="center" src="./src/Resources/icons/r_linkedin.png" alt="Danish's Linkedin" height="40" width="40" /></a>
+<a href="https://www.instagram.com/dan7sh_/" target="_blank" rel="noopener noreferrer"><img align="center" src="./src/Resources/icons/r_instagram.png" alt="Danish's Instagram" height="30" width="30"/></a>
+<a href="https://twitter.com/dan7sh_" target="_blank" rel="noopener noreferrer"><img align="center" src="./src/Resources/icons/r_twitter.png" alt="Danish's Twitter" height="30" width="30"/></a>
+<a href="https://www.snapchat.com/add/dan4sh" target="_blank" rel="noopener noreferrer"><img align="center" src="./src/Resources/icons/r_snapchat.png" alt="Danish's Snapchat" height="30" width="30"/></a>
+<a href="https://www.facebook.com/dan7sh/" target="_blank" rel="noopener noreferrer"><img align="center" src="./src/Resources/icons/r_facebook.png" alt="Danish's Facebook" height="30" width="30"/></a>
+<a href="mailto: aaansaridan@gmail.com" target="_blank" rel="noopener noreferrer"><img align="center" src="./src/Resources/icons/r_gmail.png" alt="Danish's Email" height="30" width="30"/></a>
+</p>
+<br>
+
+---
+<p align="center">
+<b>Enjoy!</b>
+</p>
+
+---
